@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+
+<div class="app website">
+
+    <header class="app-header">
+        <div class="logo"><img src="logo.png" alt="Pawsitive Pet Academy logo" class="header-logo"><span>PAWSITIVE PET ACADEMY</span></div>
+        <nav class="site-nav" aria-label="Main navigation"><a href="02-home.html">Home</a><a href="03-about.html">About</a><a href="04-courses.html">Courses</a><a href="06-select-courses.html">Select Courses</a><a href="07-my-selection.html">My Selection</a><a href="08-fees.html">Fees</a><a href="09-request-quote.html">Request Quote</a><a href="10-enquiry.html" aria-current="page">Enquiry</a><a href="11-contact.html">Contact</a></nav>
+    </header>
+
+    <main class="content page-enquiry">
+        <div id="page-error" class="error-message" hidden role="alert"></div>
+
+        <h1>Send an Enquiry</h1>
+
+        <form data-form-type="enquiry">
+
+            <div class="form-group">
+                <label for="enquiry-name">Full Name</label>
+                <input type="text" id="enquiry-name" name="name" required minlength="2" maxlength="100">
+            </div>
+
+            <div class="form-group">
+                <label for="enquiry-email">Email Address</label>
+                <input type="email" id="enquiry-email" name="email" required maxlength="120">
+            </div>
+
+            <div class="form-group">
+                <label for="enquiry-type">Enquiry Type</label>
+                <select id="enquiry-type" name="enquiryType" required>
+                    <option>Course Information</option>
+                    <option>Prices</option>
+                    <option>General Enquiry</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="enquiry-message">Your Enquiry</label>
+                <textarea id="enquiry-message" name="message" required minlength="10" maxlength="1000"></textarea>
+            </div>
+
+            <button type="submit" class="button">Send Enquiry</button>
+
+        </form>
+
+    </main>
+
+</div>
+
+</body>
+</html>
