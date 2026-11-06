@@ -1,0 +1,333 @@
+/* Pawsitive Pet Academy mobile app styling */
+
+/* Basic page settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f3e7;
+    color: #3d332b;
+}
+
+/* Mobile application frame */
+.app {
+    width: 390px;
+    min-height: 844px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Top app bar */
+.app-header {
+    background-color: #315c45;
+    color: #ffffff;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+
+.menu {
+    font-size: 25px;
+}
+
+/* Main content */
+.content {
+    padding: 20px;
+    padding-bottom: 95px;
+}
+
+h1 {
+    color: #315c45;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+h2 {
+    color: #315c45;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+/* Welcome and home hero areas */
+.hero {
+    background-color: #71835a;
+    color: #ffffff;
+    border-radius: 18px;
+    padding: 25px 20px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.hero p {
+    margin-bottom: 0;
+}
+
+/* Cards */
+.card {
+    background-color: #f8f3e7;
+    border: 1px solid #e1d7c6;
+    border-radius: 16px;
+    padding: 17px;
+    margin-bottom: 14px;
+}
+
+.card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Course cards */
+.course-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd4c5;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
+}
+
+.course-image {
+    height: 125px;
+    background-color: #71835a;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.course-info {
+    padding: 16px;
+}
+
+.price {
+    color: #315c45;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+/* Buttons */
+.button {
+    display: block;
+    width: 100%;
+    background-color: #315c45;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 15px;
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button.gold {
+    background-color: #d6b36a;
+    color: #3d332b;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 14px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdb3a3;
+    border-radius: 9px;
+    background-color: #ffffff;
+    color: #3d332b;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Course selection */
+.selection-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f8f3e7;
+    border: 1px solid #e1d7c6;
+    border-radius: 11px;
+    padding: 13px;
+    margin-bottom: 10px;
+}
+
+.selection-item input {
+    width: auto;
+}
+
+.selection-item label {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Fee summary */
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 0;
+    border-bottom: 1px solid #ddd4c5;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #315c45;
+}
+
+/* Lists */
+.info-list {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+/* Confirmation */
+.confirmation {
+    text-align: center;
+    padding-top: 55px;
+}
+
+.confirmation-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #d6b36a;
+    color: #315c45;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+/* Bottom navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 20px;
+    width: 374px;
+    background-color: #315c45;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 5px;
+    border-radius: 0 0 22px 22px;
+}
+
+.bottom-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 11px;
+    text-align: center;
+}
+
+/* Makes the design fill the phone screen on smaller devices */
+@media (max-width: 430px) {
+    .app {
+        width: 100%;
+        min-height: 100vh;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .bottom-nav {
+        width: 100%;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+
+/* Small additions: shared logo, accessible errors and button styling */
+.header-logo { width: 36px; height: 36px; object-fit: contain; border-radius: 5px; }
+.app-header .logo { display: flex; align-items: center; gap: 8px; }
+.app-header .logo span { font-size: 12px; letter-spacing: .3px; }
+.error-message { background: #fff0ec; border: 1px solid #a52b20; color: #7c2019; padding: 12px; margin-bottom: 12px; border-radius: 8px; }
+.error-message[hidden] { display: none; }
+button.button { font: inherit; cursor: pointer; border: 0; text-align: center; }
+button.button:focus-visible, a.button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 3px solid #D9A43A; outline-offset: 2px; }
+
+
+/* WIL WEBSITE: Desktop-first layout, still responsive on phones. */
+body { background: #F7F1DF; color: #332A1F; }
+.app.website { width: 100%; max-width: none; min-height: 100vh; margin: 0; border-radius: 0; box-shadow: none; overflow: visible; }
+.app-header { background: #1B4D35; padding: 16px max(24px, calc((100vw - 1180px)/2)); gap: 25px; flex-wrap: wrap; }
+.header-logo { width: 54px; height: 54px; }
+.app-header .logo span { font-size: 19px; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 5px 14px; align-items: center; }
+.site-nav a { color: white; text-decoration: none; font-size: 14px; padding: 9px 4px; border-bottom: 2px solid transparent; }
+.site-nav a:hover, .site-nav a[aria-current="page"] { border-color: #D9A43A; }
+.website .content { max-width: 1120px; margin: 0 auto; padding: 42px 24px 90px; }
+.website h1 { font-size: 36px; color: #1B4D35; }
+.website h2 { font-size: 23px; }
+.website .hero { padding: 55px 45px; background: #6F963E; border-radius: 16px; }
+.website .hero h1 { color: white; font-size: 42px; }
+.website .card { padding: 24px; }
+.website .course-card { display: inline-flex; vertical-align: top; flex-direction: column; width: calc(33.333% - 19px); margin: 0 24px 24px 0; min-height: 280px; }
+.website .course-card:nth-of-type(3n) { margin-right: 0; }
+.website .course-card .course-info { flex: 1; }
+.website .form-group { max-width: 700px; }
+.website form { max-width: 760px; }
+.website .selection-item { max-width: 760px; }
+.website .card, .website #fee-summary { max-width: 100%; }
+.website .bottom-nav { display: none; }
+@media (max-width: 900px) {
+ .app-header { padding: 18px 24px; }
+ .website .course-card { width: calc(50% - 15px); margin-right: 20px; }
+ .website .course-card:nth-of-type(3n) { margin-right: 20px; }
+ .website .course-card:nth-of-type(2n) { margin-right: 0; }
+}
+@media (max-width: 600px) {
+ .app-header { padding: 14px 18px; }
+ .app-header .logo span { font-size: 15px; }
+ .header-logo { width: 42px; height: 42px; }
+ .site-nav { gap: 3px 12px; }
+ .site-nav a { font-size: 12px; }
+ .website .content { padding: 24px 18px 60px; }
+ .website .hero { padding: 30px 22px; }
+ .website .hero h1 { font-size: 30px; }
+ .website h1 { font-size: 28px; }
+ .website .course-card, .website .course-card:nth-of-type(2n), .website .course-card:nth-of-type(3n) { display: flex; width: 100%; margin: 0 0 16px; }
+}
